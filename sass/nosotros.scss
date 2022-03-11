@@ -1,0 +1,201 @@
+p {
+    font-family: 'Playfair Display', serif;
+}
+
+#history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem;
+
+    .historyDescription {
+        h1 {
+            font-family: 'Yeseva One', cursive;
+            border-bottom: 1.5px solid red;
+
+        }
+    }
+
+    .historyImages {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 4rem;
+
+        img {
+            width: 35%;
+            margin: 0rem 0.5rem;
+            box-shadow: 0 0 10px black;
+        }
+    }
+}
+
+#location {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+
+    .description {
+        width: 40%;
+
+        h2 {
+            font-family: 'Yeseva One', cursive;
+            border-bottom: 1.5px solid red;
+        }
+        p {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+#contact2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 30vh;
+
+    a {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        font-family: serif;
+        
+        .netImage {
+            box-shadow: 0 0 10px black;
+            border-radius: 3rem;
+            width: 6rem;
+            transition: 0.5s;
+        }
+        .netImage:hover {
+            transform: scale(1.1);
+        }
+    }
+    a:hover {
+        text-decoration: line-through red;
+    }
+}
+
+@media only screen and (min-width: 150px) and (max-width: 445px) {
+    #banner2 {
+        img {
+            background-repeat: round;
+        }
+    }
+
+    #history {
+        margin: 2rem 0.5rem;
+
+        .historyDescription {
+            width: 17rem;
+        }
+
+        .historyImages {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+                margin: 0.5rem 0rem;
+            }
+        }
+    }
+
+    #location {
+        flex-direction: column;
+
+        .description {
+            margin: 0.5rem 1rem;
+            width: 18rem;
+        }
+
+        div {
+            iframe {
+                width: 100%;
+            }
+        }
+    }
+
+    #contact2 {
+        a {
+            .netImage {
+                width: 3rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 446px) and (max-width: 582px) {
+    #history {
+        margin: 2rem;
+
+        .historyDescription {
+            width: 100%;
+        }
+
+        .historyImages {
+            img {
+                width: 35%;
+                margin: 0rem 0.4rem;
+            }
+        }
+    }
+
+    #location {
+        flex-direction: column;
+
+        .description {
+            margin: 0.5rem 0rem;
+        }
+
+        div {
+            iframe {
+                width: 400px;
+            }
+        }
+    }
+
+    #contact2 {
+        a {
+            .netImage {
+                width: 5rem;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 583px) and (max-width: 975px) {
+    #banner2 {
+        div {
+            width: 13rem;
+        }
+    }
+
+    #history {
+        margin: 2rem;
+
+        .historyDescription {
+            width: 100%;
+        }
+
+        .historyImages {
+            img {
+                width: 35%;
+                margin: 0rem 0.35rem;
+            }
+        }
+    }
+
+    #location {
+        flex-direction: column;
+        justify-content: center;
+
+        .description {
+            width: unset;
+            margin: 0.5rem 0rem;
+        }
+    }
+}

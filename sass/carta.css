@@ -1,0 +1,238 @@
+#encabezado .navbar .nav-link2 {
+  color: white !important;
+}
+
+#banner2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#banner2 img {
+  width: 100%;
+  height: 100vh;
+}
+
+#banner2 div {
+  position: absolute;
+  top: 20px;
+  width: 20rem;
+}
+
+#banner2 div .title2 {
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+#banner2 div .subtitle2 {
+  color: white;
+  opacity: 0.5;
+  font-size: 1rem;
+}
+
+#menues2 {
+  display: block;
+  height: unset;
+}
+
+#menues2 .categoryTitle {
+  font-size: 2rem;
+  font-family: 'Yeseva One', cursive;
+  color: black;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  width: 10rem;
+  border-bottom: 2px solid red;
+}
+
+#menues2 .category {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#menues2 .category .product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 4rem;
+  padding: 2rem;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#menues2 .category .product div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#menues2 .category .product div h2 {
+  font-family: 'Yeseva One', cursive;
+}
+
+#menues2 .category .product div .menuImg {
+  width: 100%;
+}
+
+#menues2 .category .product:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #0f1110;
+  -webkit-box-shadow: 0 0 20px black;
+          box-shadow: 0 0 20px black;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 4rem;
+  padding: 1rem;
+}
+
+#footer p {
+  color: white;
+  font-family: 'Playfair Display', serif;
+  font-size: small;
+  opacity: 0.5;
+}
+
+#footer p:hover {
+  opacity: 1;
+}
+
+#footer .footerLogo {
+  width: 7rem;
+}
+
+#footer .developer {
+  color: white;
+  margin: 0;
+  font-size: 0.8rem;
+  font-family: serif;
+}
+
+#footer .developer .devSite {
+  font-family: serif;
+  -webkit-text-decoration: underline white;
+          text-decoration: underline white;
+  color: white;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 445px) {
+  #banner2 div {
+    width: 8rem;
+  }
+  #banner2 div .title2 {
+    border-bottom: unset;
+  }
+  #menues2 .category {
+    justify-items: center;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+  }
+  #menues2 .category .product {
+    width: 17rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #footer {
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 446px) and (max-width: 582px) {
+  #banner2 div .title2 {
+    border-bottom: unset;
+  }
+  #menues2 .category {
+    justify-items: center;
+  }
+  #menues2 .category .product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0.6rem;
+    padding: 1rem;
+    width: 12rem;
+  }
+  #menues2 .category .product div h2 {
+    padding: 0rem 0.5rem;
+  }
+  #menues2 .category .product div .menuImg {
+    width: 10rem;
+    height: 9rem;
+  }
+}
+
+@media only screen and (min-width: 583px) and (max-width: 975px) {
+  #banner2 div {
+    width: 13rem;
+  }
+  #menues2 .category {
+    justify-items: center;
+  }
+  #menues2 .category .product {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 1rem 0.6rem;
+    padding: 1rem;
+    width: 16rem;
+  }
+  #menues2 .category .product div h2 {
+    padding: 0rem 0.5rem;
+  }
+  #menues2 .category .product div .menuImg {
+    width: 10rem;
+    height: 9rem;
+  }
+}
+/*# sourceMappingURL=carta.css.map */

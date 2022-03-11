@@ -1,0 +1,407 @@
+/*
+    Colores: 
+        fondo: #0f1110;;
+        letras: white, black;
+        border: red;
+    
+    Fuentes:
+        principales: 'Yeseva One', cursive;
+        secundarias: 'Playfair Display', serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+}
+
+#encabezado {
+
+    .navbar {
+        padding-top: unset;
+        padding-bottom: unset;
+        position: absolute;
+        width: 100%;
+        z-index: 100;
+        background-color: unset!important;
+
+        .navbar-toggler {
+            background-color: gray;
+        }
+        .navbar-toggler:focus {
+            box-shadow: none!important;
+        }
+
+        .navbar-nav {
+            margin-left: auto!important;
+            margin-right: unset!important;
+            margin-bottom: unset!important;
+        }
+
+        .nav-link {
+            color: black!important;
+            text-decoration: none;
+            font-family: 'Yeseva One', cursive;
+        }
+        .nav-link:hover {
+            text-decoration: underline red;
+        }
+    }
+
+    .navImg {
+        width: 8rem;
+        opacity: 0.8;
+    }
+}
+
+p {
+    margin-bottom: 0!important;
+}
+
+#banner {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    video {
+        width: 100%;
+    }
+
+    div {
+        position: absolute;
+        top: 20px;
+        width: 20rem;
+
+        .title {
+            font-family: 'Yeseva One', cursive;
+            border-bottom: 1px solid black;
+        }
+        .subtitle {
+            color: black;
+            opacity: 0.5;
+            font-size: 1rem;
+        }
+    }
+}
+
+#start {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 4rem;
+
+    .startDescription {
+        width: 35rem;
+        margin-right: 5rem;
+
+        h1 {
+            font-family: 'Yeseva One', cursive;
+            border-bottom: 1.5px solid red;
+        }
+        p {
+            font-family: 'Playfair Display', serif;
+        }
+    }
+
+    .startImages {
+        display: flex;
+        flex-direction: row;
+
+        .startImg {
+            margin: 0rem 0.2rem;
+            width: 50%;
+            height: 100vh;
+        }
+    }
+}
+
+#stellar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+
+    .stellarDescription {
+        width: 35rem;
+
+        h1, p {
+            color: white;
+        }
+
+        h1 {
+            font-family: 'Yeseva One', cursive;
+            border-bottom: 1.5px solid red;
+        }
+
+        p {
+            font-family: 'Playfair Display', serif;;
+        }
+
+    }
+    
+    .stellarImg {
+        width: 100%;
+        height: 18rem;
+    }
+}
+
+#menues {
+    margin-top: 3rem;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+
+    .product {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 2rem 4rem;
+        padding: 2rem;
+        box-shadow: 0 0 10px black;
+        transition: 0.5s;
+
+        div {
+            display: flex;
+            flex-direction: column;
+
+            h2 {
+                font-family: 'Yeseva One', cursive;
+            }
+
+            .menuImg {
+                width: 90%;
+            }
+        }
+    }
+
+    .product:hover {
+        transform: scale(1.05);
+    }
+}
+
+#contact {
+    margin-top: 5rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: 115vh;
+    background-color: #0f1110;
+
+    h1 {
+        color: white;
+        font-family: 'Yeseva One', cursive;
+        border-bottom: 1.5px solid red;
+        margin-bottom: 2rem;
+    }
+
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .network {
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+
+            a {
+                font-family: serif;
+                margin: 1rem 0rem;
+                text-decoration: none;
+                color: white;
+                
+                .socialImg {
+                    transition: 0.5s;
+                    width: 4.5rem;
+                }
+                .socialImg:hover {
+                    transform: scale(1.15);
+                }
+            }
+        }
+    }
+
+    .footer {
+        padding-top: 4rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            color: white;
+            font-family: 'Playfair Display', serif;
+            font-size: small;
+            opacity: 0.5;
+        }
+        p:hover {
+            opacity: 1;
+        }
+
+        .footerLogo {
+            width: 7rem;
+        }
+    
+        .developer {
+            color: white;
+            margin: 0;
+            font-size: 0.8rem;
+            font-family: serif;
+    
+            .devSite {
+                font-family: serif;
+                text-decoration: underline white;
+                color: white;
+            }
+        }
+    }
+}
+
+@import "carta.scss";
+@import "nosotros.scss";
+
+@media only screen and (min-width: 150px) and (max-width: 582px) {
+    #encabezado {
+        .navImg {
+            width: 5rem;
+        }
+        .navbar {
+            .nav-link {
+                color: white!important;
+            }
+        }
+    }
+
+    #banner {
+        background-image: url(../assets/sushiBg.jfif);
+        background-repeat: round;
+
+        video {
+            display: none;
+        }
+        div {
+            .title, .subtitle {
+                color: white;
+            }
+            .title {
+                border-bottom: unset;
+            }
+        }
+    }
+
+    #start {
+        flex-direction: column;
+        margin: unset;
+        justify-content: unset;
+        height: unset;
+        margin-top: 2rem;
+
+        .startDescription {
+            width: 95%;
+            text-align: center;
+            margin: 0;
+        }
+
+        .startImages {
+            margin-top: 1rem;
+            justify-content: center;
+
+            .startImg {
+                width: 45%;
+                height: 25rem;
+            }
+        }
+    }
+
+    #stellar {
+        margin-top: 3rem;
+        padding: 2rem;
+
+        div {
+            display: none;
+        }
+        .stellarDescription {
+            display: inline-block;
+        }
+    }
+
+    #menues {
+        height: auto;
+        grid-template-columns: repeat(1, 1fr);
+
+        .product {
+            text-align: center;
+            flex-direction: column;
+            padding: 1rem;
+        }
+    }
+
+    #contact {
+        height: auto;
+
+        article {
+            div {
+                iframe {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 583px) and (max-width: 975px) {
+    #start {
+        margin: 2rem;
+
+        .startDescription {
+            margin-right: 1rem;
+        }
+
+        .startImages {
+            .startImg {
+                width: 11rem;
+            }
+        }
+    }
+
+    #menues {
+        height: unset;
+        justify-items: center;
+
+        .product {
+            flex-direction: column;
+            margin: 1rem 0.6rem;
+            padding: 1rem;
+            width: 16rem;
+
+            div {
+                h2 {
+                    padding: 0rem 0.5rem;
+                }
+
+                .menuImg {
+                    width: 10rem;
+                    height: 9rem;
+                }
+            }
+        }
+    }
+
+    #contact {
+        div {
+            iframe {
+                width: 400px;
+            }
+        }
+    }
+}

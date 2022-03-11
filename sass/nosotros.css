@@ -1,0 +1,215 @@
+p {
+  font-family: 'Playfair Display', serif;
+}
+
+#history {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 4rem;
+}
+
+#history .historyDescription h1 {
+  font-family: 'Yeseva One', cursive;
+  border-bottom: 1.5px solid red;
+}
+
+#history .historyImages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 4rem;
+}
+
+#history .historyImages img {
+  width: 35%;
+  margin: 0rem 0.5rem;
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+}
+
+#location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+#location .description {
+  width: 40%;
+}
+
+#location .description h2 {
+  font-family: 'Yeseva One', cursive;
+  border-bottom: 1.5px solid red;
+}
+
+#location .description p {
+  font-size: 1.25rem;
+}
+
+#contact2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 30vh;
+}
+
+#contact2 a {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+  font-family: serif;
+}
+
+#contact2 a .netImage {
+  -webkit-box-shadow: 0 0 10px black;
+          box-shadow: 0 0 10px black;
+  border-radius: 3rem;
+  width: 6rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#contact2 a .netImage:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#contact2 a:hover {
+  -webkit-text-decoration: line-through red;
+          text-decoration: line-through red;
+}
+
+@media only screen and (min-width: 150px) and (max-width: 445px) {
+  #banner2 img {
+    background-repeat: round;
+  }
+  #history {
+    margin: 2rem 0.5rem;
+  }
+  #history .historyDescription {
+    width: 17rem;
+  }
+  #history .historyImages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #history .historyImages img {
+    width: 100%;
+    margin: 0.5rem 0rem;
+  }
+  #location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #location .description {
+    margin: 0.5rem 1rem;
+    width: 18rem;
+  }
+  #location div iframe {
+    width: 100%;
+  }
+  #contact2 a .netImage {
+    width: 3rem;
+  }
+}
+
+@media only screen and (min-width: 446px) and (max-width: 582px) {
+  #history {
+    margin: 2rem;
+  }
+  #history .historyDescription {
+    width: 100%;
+  }
+  #history .historyImages img {
+    width: 35%;
+    margin: 0rem 0.4rem;
+  }
+  #location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #location .description {
+    margin: 0.5rem 0rem;
+  }
+  #location div iframe {
+    width: 400px;
+  }
+  #contact2 a .netImage {
+    width: 5rem;
+  }
+}
+
+@media only screen and (min-width: 583px) and (max-width: 975px) {
+  #banner2 div {
+    width: 13rem;
+  }
+  #history {
+    margin: 2rem;
+  }
+  #history .historyDescription {
+    width: 100%;
+  }
+  #history .historyImages img {
+    width: 35%;
+    margin: 0rem 0.35rem;
+  }
+  #location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #location .description {
+    width: unset;
+    margin: 0.5rem 0rem;
+  }
+}
+/*# sourceMappingURL=nosotros.css.map */
