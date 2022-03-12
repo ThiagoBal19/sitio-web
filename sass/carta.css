@@ -163,7 +163,7 @@
 
 @media only screen and (min-width: 150px) and (max-width: 445px) {
   #banner2 div {
-    width: 8rem;
+    width: 10rem;
   }
   #banner2 div .title2 {
     border-bottom: unset;
@@ -183,6 +183,9 @@
   }
   #footer {
     text-align: center;
+  }
+  #footer p {
+    width: 7rem;
   }
 }
 

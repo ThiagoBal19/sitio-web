@@ -512,7 +512,7 @@ p {
 
 @media only screen and (min-width: 150px) and (max-width: 445px) {
   #banner2 div {
-    width: 8rem;
+    width: 10rem;
   }
   #banner2 div .title2 {
     border-bottom: unset;
@@ -532,6 +532,9 @@ p {
   }
   #footer {
     text-align: center;
+  }
+  #footer p {
+    width: 7rem;
   }
 }
 
@@ -814,6 +817,9 @@ p {
   #banner video {
     display: none;
   }
+  #banner div {
+    width: 10rem;
+  }
   #banner div .title, #banner div .subtitle {
     color: white;
   }
@@ -874,7 +880,10 @@ p {
     height: auto;
   }
   #contact article div iframe {
-    width: 100%;
+    width: 90%;
+  }
+  #contact .footer p {
+    width: 7rem;
   }
 }
 

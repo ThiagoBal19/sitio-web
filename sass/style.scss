@@ -290,6 +290,8 @@ p {
             display: none;
         }
         div {
+            width: 10rem;
+
             .title, .subtitle {
                 color: white;
             }
@@ -352,8 +354,14 @@ p {
         article {
             div {
                 iframe {
-                    width: 100%;
+                    width: 90%;
                 }
+            }
+        }
+
+        .footer {
+            p {
+                width: 7rem;
             }
         }
     }
